@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Planets</title>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="styles.css">
+    <style>
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-container h1 {
+    font-size: 1.8rem;
+  }
+  .social-links {
+    gap: 15px;
+  }
+}
+
+
+  body{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+nav{
+    font-size: 3rem;
+    text-size-adjust: large;
+    text-align: center; 
+    padding: 50px;
+    word-spacing: 3em;
+    
+    
+
+  }
+  
+  .image-styl img{
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #4fc3f7;
+  margin-bottom: 10px;
+  
+  }
+  .image-styl{
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+  padding: 10px 0;
+  height: 100%;
+  }
+/* === Planets Page Container === */
+.planets-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  background: #0a0a2a
+}
+/* === Individual Planet Cards === */
+.planet-entry {
+  background: rgba(26, 26, 74, 0.6);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid #4fc3f7; /* Soft blue border */
+  color: #f0f0f0;
+}
+
+.planet-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(79, 195, 247, 0.2);
+}
+
+/* === Typography === */
+.planet-entry h2 {
+  color: #4fc3f7;
+  margin-top: 0;
+  font-size: 1.8em;
+  border-bottom: 1px solid #4fc3f7;
+  padding-bottom: 10px;
+}
+
+.planet-entry p {
+  color: #e0e0e0;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* === Decorative Elements === */
+.planet-entry::before {
+  content: "🪐";
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 1.5em;
+  background: #0a0a2a;
+  padding: 0 10px;
+}
+
+/* === Intro Paragraph === */
+.intro-paragraph {
+  font-size: 1.25rem;        /* 20px (larger than body text) */
+  line-height: 1.9;          /* Extra breathing room */
+  color: #e0e0ff;           /* Soft blue-white */
+  background: rgba(26, 26, 74, 0.5);
+  padding: 25px;
+  border-left: 4px solid #4fc3f7; /* Accent bar */
+  margin: 0 0 40px 0;       /* Space below */
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Animation on load */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.intro-paragraph {
+  animation: fadeIn 0.6s ease-out;
+}
+/* Footer Styles */
+.site-footer {
+  background: #1a1a4a;
+  color: white;
+  padding: 40px 0 20px;
+  border-top: 2px solid #4fc3f7;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+  color: #4fc3f7;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4fc3f7;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #25255a;
+  font-size: 0.9rem;
+}
+
+
+    </style>
+
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="planet.html">Planets</a>
+    <a href="mission.html">Missions</a>
+    <a href="contact.html">Contacts</a>
+  </nav>
+  <div class="planet-content">
+<p class="intro-paragraph">Growing up we learnt that there were nine planets with pluto being exepmted in 2006 due to the planet being unable to clear its orbital path .
+A planet is  a celestial body orbitting  a star ,and has sufficient mass for its self-gravity to overome rigid bodies so that it assumes a hydrostatic 
+ equilibrium shape , and has cleared the neighborhood around its orbit .
+Planets discovered out of our solar system are known as exoplanets . Approximately over 5500 exoplanets have been discovered to date and are still being discovered.
+ Here are some of the most mind bending exoplanets ever discoverd .</p>
+
+ <div class="planet-entry">
+ <h2>Object J1407b</h2>
+<p>Nicknamed "super saturn " or saturn on steriods , this planets boasts with the largest ring system ever discovered to date . The planet sits in the constellation 
+Centaurus aproxmately 433 light years from earth . The ring system is aproximatedat 180 million kilometres wide . To put that into a rough perspective , if J1407b
+was put in the position of our host star , the outer edges of the ring system would be between the orbit of earth and that of mars .
+Surely saturn must feel like like a tiny, sparkly pebble before j1407b</p> 
+
+<div class="image-styl">
+<img src="Images/Screenshot (1).png">
+<img src="images/Screenshot (30).png">
+
+
+     </div>
+ </div>
+
+
+
+ <div class="planet-entry">
+<h2> CFBDSIR J214947.2-040308.9 </h2>
+<p>Meet object  CFBDSIR J214947.2-040308.9 or more casually known as cf 21, a very, very bizarre exoplanet disovered in 2012  by  Jonathan Gagné, Thierry Forveille,
+    and Xavier delffose
+     .A planet is a celesial body orbitting its host star ,
+    exept that cf 21 isn't orbitting a star . its a free floating planet in the vastness of space commonly  known as a rougue 
+    planet.There are quite a lot of free floating bodies in the vastness of space 
+    but cf21 is just peculiar in its own way . To better understand the nature of this rogue planet 
+we first have to turn to brown dwarfs . brown dwars are bodies with mass betwwen 13-80 that of jupiter . In short too
+ big to be a palanet and too small to be a star . stars need about 80% 
+the mass of jupiter for a thermonuclear fusion to power the star . For brown dwarfs the mass is not high enough so brown
+ dwarfs fuse deuterium for a short period of time the cease altogether 
+.This causes brown dwarfs to luminate heat and ligt in infared . The mass of cf21 is estimated to be 4-7 that of jupiter 
+which means its not a brown dwarf . But wait , object cf21 
+is luminating in infared . Newly formed planets luminate heat and light until they cool of which may take a few millon years .
+ So its possible that cf21 is actually a newly formed planet . 
+This led astronouts to make more observations to cf21 which revealed more bizarre nature of the exoplanet . Cf21 is in close
+ proximity of AB Doradus , a young stellar moving group (a group of stars 
+moving together suggesting a common origin ).if cf21 was part of ab doradus its high tempertures could be simply explained 
+as a young planet ejected from its nursery . However observations seems to suggest 
+otherwise . object cf21 is 130 light years from earth and ab darundus 75 light years from earth , a difference of 55 light
+ years . a planet roamimg in space for that long has had time to cool off, should'nt luminate any heat and 
+most of all its not that young . it's relatively old and have already cooled off . something is way off with object cf21 . could it 
+possibly be a rougue planet , but the luminating heat seem to say otherwise , or could it be a planemo. 
+Observations are still
+ ongoing to find out the mystery behind cf21 , maybe its birthplace is not 
+ab doradus or maybe something reheated the planet , only time will tell  </p>
+
+<div class="image-styl">
+<img src="images/Screenshot (2).png">
+<img src="images/Screenshot (31).png">
+
+    </div>
+
+ </div>
+
+
+
+
+ <div class="planet-entry">
+<h2>Kepler-16b</h2>
+<P>Now imagine on a bright sunny day , you look at the ground and see two shadows . This would be your situation if 
+    you were standing 245 light years away
+    on kepler-16b. Just that this wouldn't be possible as kepler-16b is a gas giant with a mass of around 0.333 that of jupiter 
+    . kepler-16b orbits 
+    two stars kepler-16A k-type main sequence star and kepler-16B  m-type red dwaf. The two stars orbit each other every 41 days 
+    and kepler-16b orbiting both 
+   . 
+</P>
+
+<div class="image-styl">
+<img src="images/Screenshot (3).png">
+<img src="images/Screenshot (32).png">
+
+    </div>
+
+ </div>
+
+
+ <div class="planet-entry">
+<h2>PSR B1257+12 b</h2>
+<p>Nicknamed after undead norse zombies,draugr, meet a dead world orbitting a dead star , a neutron star .To gain
+     a better  understanding  lets turn to how stars die and a neutron star born 
+    . What powers most star is the fusion of hdrogen into helium . At some point all hydrogen will be exhausted , when this happens the
+     star starts to fuse 
+    helium into more heavier elements like carbon and oxygen , but still at some point the helium also will run out . Depending on the 
+    size of the 
+    star , this process will continue with the star fusing more heavier elements until it reaches  iron . Unlike the elements before ,the fusion of
+     iron is endothermic
+    , it consumes energy instead of releasing . what happens when the core is not releasing energy to conter the gravity of such a massive star 
+    .The core collapsess in itself trigerring a supernova explosion . For stars with solar masses betwwen 8-25, in the collapsed core
+     protons and electrons merge 
+    to form neutrinos hence the name neutron star . For anything larger than 25 solar masses the core collapses into a blackhole 
+    .a newly formed neutron star can rotate upto a few 
+    hundred times a second with magnetic poles emmiting beams of radiation. It becomes a pulsar . Well this planet is just what it's
+      orbitting 
+    .Located 2300 light years the planet orbit at 0.19 au from the pulsar . A planet that close would have been engulfed by the extemes
+     of a supernova ,
+    its possible that the planet was reborn afer the supernova to be at such a close proximity to the pulsar or could be that draugr was
+     a tough guy and survived the unthinkable.
+    What do you think ?
+
+
+
+
+</p>
+
+       <div class="image-styl">
+<img src="images/Screenshot (4).png">
+<img src="images/Screenshot (33).png">
+
+       </div>
+   </div>
+
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Universe Explorer</h3>
+          <p>Discover the cosmos like never before.</p>
+        </div>
+        
+        <div class="footLinks">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="planet.html">Planets</a></li>
+            <li><a href="mission.html">Missions</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+         
+          
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Credits</h4>
+          <p>Images: NASA/JPL</p>
+          <p>Data: NASA APIs</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Universe Explorer | Made with ♥ and stardust</p>
+      </div>
+    </div>
+  </footer> 
+</body>
+
+
+
+
+
+
+
+
+</html>
